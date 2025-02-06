@@ -43,6 +43,12 @@ def main():
         #update game state
         dt = clock.tick(60) / 1000 #This limits the amount of runs per second to 60 for 60 FPS
         updatable_group.update(dt)
+
+        #Checks if next frame is going to be a collision, ends game if true
+        for asteroid in asteroid_group:
+            if player.collision(asteroid) == True:
+                print("Game over!")
+                raise SystemExit()
         
         #draw everything
         screen.fill((0, 0, 0))
