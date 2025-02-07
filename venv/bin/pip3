@@ -1,4 +1,4 @@
-#!/Users/juanverano/workspace/github.com/JuanVeranoMesa/pygame/venv/bin/python3.12
+#!/Users/juanverano/workspace/github/JuanVeranoMesa/asteroid/venv/bin/python3.12
 # -*- coding: utf-8 -*-
 import re
 import sys
