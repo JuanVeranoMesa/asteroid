@@ -66,10 +66,11 @@ def main():
         for asteroid in asteroid_group:
             for shot in shot_group:
                 if shot.position.distance_to(asteroid.position) <= SHOT_RADIUS + asteroid.radius:
-                    drawable_group.remove(shot)
-                    updatable_group.remove(shot)
-                    shot_group.remove(shot)
-                    asteroid.kill()
+                    #drawable_group.remove(shot)
+                    #updatable_group.remove(shot)
+                    #shot_group.remove(shot)
+                    shot.kill()
+                    asteroid.split()
 
         #draw everything
         screen.fill((0, 0, 0))
