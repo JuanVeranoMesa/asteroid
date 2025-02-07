@@ -56,6 +56,7 @@ def main():
                 print("Game over!")
                 raise SystemExit()
         '''
+        # This currently isn't working
         for asteroid in asteroid_group:
             for shot in shot_group:
                 if shot.position.distance_to(asteroid.position) <= SHOT_RADIUS + asteroid.radius:
